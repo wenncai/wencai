@@ -1,0 +1,62 @@
+
+#shops ul{
+    width: 1200px;
+    min-height: 300px;
+    margin: 20px auto;
+}
+#shops ul li{
+    list-style: none;
+    width: 236px;
+    height: 304px;
+    background-color: #fff;
+    float: left;
+    margin: 20px;
+}
+#shops ul li .pic{
+    height: 180px;
+    position: relative;
+}
+#shops ul li .pic img{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#shops ul li p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+}
+#shops ul li p.price{
+    color: #ff6700;
+}
+#shops ul li button{
+    display: block;
+    margin: 10px auto;
+}
+#shops a .count{
+    width: 100px;
+    height: 120px;
+    background-color: orange;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 100px;
+}
+#shops a .count span{
+    color: red;
+    font-weight: bold;
+    margin: 2px;
+}
+.hide{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
