@@ -1,14 +1,16 @@
 class Details{
     constructor() {
         //获取元素
-        this.pic = document.querySelector('.pic>img')
-		console.log(pic);
-        this.details = document.querySelector('.details')
+        this.pic = document.querySelector('#smallBox>img')
+		this.pic1 =  document.querySelector('#bigBox>img')
+        this.details = document.querySelector('#details')
+		
         this.init()
     }
     init() {
         this.request()
     }
+ 
     //查询字符串转成对象处理
     getQuery(name) {
         let id = location.search.slice(1)
@@ -30,16 +32,21 @@ class Details{
             pAjax({ url: '../data/goods.json' })
             .then((res) => {
                 let data = JSON.parse(res)
-                data = data.slice(0, 30)
+                data = data.slice(50, 160)
                 this.render(data, id)
             })
         }
     }
+	
+	 
+	
+	
     //进行赋值
     render(data, id) {
         let goods = data.find(item => { return item.goods_id == id })
-        this.pic.src = goods.img_big_logo
-        this.details.innerHTML = goods.goods_introduce
+        this.pic.src = goods.img_big_logo;
+		this.pic1.src = goods.img_big_logo;
+        this.details.innerHTML = goods.goods_introduce;
     }
 }
 new Details()

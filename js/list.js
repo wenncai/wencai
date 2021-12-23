@@ -2,7 +2,7 @@ class List{
     constructor() {
         //获取元素
         this.container = document.querySelector('#shops>ul')
-        this.span = document.querySelector('#shops>a>.count>span')
+        this.span = document.querySelector('#count>span')
 		
         //初始化函数调用
         this.init()
@@ -18,7 +18,7 @@ class List{
         pAjax({ url: 'data/goods.json' })
         .then((res) => {
             let data = JSON.parse(res)
-            data = data.slice(50,150 )
+            data = data.slice(50,160)
             this.render(data)
         })
     }

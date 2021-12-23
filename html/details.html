@@ -1,33 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/details.css">
-</head>
-<body>
-    <header>头部区域</header>
-    <main>
-        <div class="left">
-            <div class="zoom">
-                <div class="pic">
-                    <img src="" alt="" style="width: 100%; height: 340px;">
-                </div>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/details.css">
+
+	</head>
+	<body onload="getProvince()">
+		<header>
+			<div id="hleft">
+				<div class="phone">
+
+				</div>
+				<div class="pnumber">
+					<span>123 456 789</span>
+				</div>
+				<div class="timer">
+
+					<div id="top">
+						<h1 id="h">2021年12月23日 05:05:00</h1>
+					</div>
+					<div id="bottom">
+						<h1 id="p1">星期五</h1>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="hright">
+				<div class="search">
+					<div class="search_photo">
+					</div>
+					<div class="search_text">
+						<input type="search" placeholder="search">
+					</div>
+				</div>
+				<div class="share">
+					<a href="#"><img src="../img/share.jpg"></a>
+				</div>
+				<div class="shoppingcart">
+					<a href="../html/cart.html"><img src="../img/shopcart.jpg"></a>
+				</div>
+			</div>
+		</header>
+
+		<script src="../js/timer.js"></script>
+		<nav>
+			<div id="logo">
+
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="#">女装</a></li>
+					<li><a href="#">男装</a></li>
+					<li><a href="#">服饰配件</a></li>
+					<li><a href="#">零售商</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">购买</a></li>
+				</ul>
+			</div>
+			<div id="navbar">
+				<ul>
+					<li><a href="#">我的账户</a></li>
+					<li><a href="#">愿望清单</a></li>
+					<li><a href="#">账户结算</a></li>
+					<li><a href="#">退出系统</a></li>
+				</ul>
+			</div>
+			<div id="login">
+				<span><a href="../html/login.html">登录</a></span>
+				<span>/</span>
+				<span><a href="../html/register.html">注册</a></span>
+			</div>
+		</nav>
+		<main>
+			<div class="left">
+				<div class="zoom">
+					<div id="smallBox">
+						<img src="" alt="" id="smallImg">
+						<span></span>
+					</div>
+					<div id="bigBox">
+						<img src="" alt="" id="bigImg">
+					</div>
+					<!-- 
                 <ul>
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
                     <li>4</li>
                     <li>5</li>
-                </ul>
-            </div>
-        </div>
-        <div class="right"></div>
-    </main>
-    <div class="details"></div>
-    <script src="../js/ajax.js"></script>
-    <script src="../js/details.js"></script>
-</body>
+                </ul> -->
+				</div>
+				<script src="../js/loupe.js"></script>
+			</div>
+			<!-- <div class="right"></div> -->
+
+			<div id="detail_shop">
+				<h3>tittle</h3>
+				<div class="price"></div>
+				<div class="current"></div>
+				<div class="color">
+					<span>颜色分类</span>
+					<select name="">
+						<option value="">蓝色00011</option>
+						<option value="">浅色00021</option>
+						<option value="">蓝色00311</option>
+						<option value="">灰色0042</option>
+						<option value="">白色00433</option>
+						<option value="">青色00544</option>
+						<option value="">黑色00655</option>
+					</select>
+					<span>尺码</span>
+					<select name="">
+						<option value="">  S  </option>
+						<option value=""> M   </option>
+						<option value=""> L  </option>
+						<option value=""> XL</option>
+						<option value=""> XXL</option>
+						<option value=""> XXXL</option>
+						<option value="">XXXXL</option>
+					</select>
+				</div>
+				<div class="location">
+					<span>配送地址</span>
+					  省:<select id="province" onchange="getCity()" selected = "selected" value="">
+					   <option value="">--请选择--</option>
+					   </select>
+					  市:<select id="city" value="" selected = "selected"></select>
+					  <h4 id="h4"></h4>
+				</div>
+                 <script src="../js/location.js"></script>
+				<button type="button" class="add_cart">加入购物车</button>
+				<button type="button" class="buy">立即购买</button>
+				<script src="../js/ajax.js"></script>
+
+			</div>
+		</main>
+		<script src="../js/detailShop.js"></script>
+		<div id="details"></div>
+		<script src="../js/ajax.js"></script>
+
+		<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-top">
+					<div class="col-md-4 top-footer1">
+						<h2>Newsletter</h2>
+						<form>
+							<input type="text" value="" onFocus="this.value='';"
+								onBlur="if (this.value == '') {this.value ='';}">
+							<input type="submit" value="SUBSCRIBE">
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="col-sm-3 footer-bottom-cate">
+						<h6>种类</h6>
+						<ul>
+							<li><a href="#">Curabitur sapien</a></li>
+							<li><a href="#">Dignissim purus</a></li>
+							<li><a href="#">Tempus pretium</a></li>
+							<li><a href="#">Dignissim neque</a></li>
+							<li><a href="#">Ornared id aliquet</a></li>
+
+						</ul>
+					</div>
+					<div class="col-sm-3 footer-bottom-cate">
+						<h6>专题</h6>
+						<ul>
+							<li><a href="#">Curabitur sapien</a></li>
+							<li><a href="#">Dignissim purus</a></li>
+							<li><a href="#">Tempus pretium</a></li>
+							<li><a href="#">Dignissim neque</a></li>
+							<li><a href="#">Ornared id aliquet</a></li>
+
+						</ul>
+					</div>
+					<div class="col-sm-3 footer-bottom-cate">
+						<h6>著名品牌</h6>
+						<ul>
+							<li><a href="#">Curabitur sapien</a></li>
+							<li><a href="#">Dignissim purus</a></li>
+							<li><a href="#">Tempus pretium</a></li>
+							<li><a href="#">Dignissim neque</a></li>
+							<li><a href="#">Ornared id aliquet</a></li>
+							<li><a href="#">Ultrices id du</a></li>
+							<li><a href="#">Commodo sit</a></li>
+
+						</ul>
+					</div>
+					<div class="col-sm-3 footer-bottom-cate cate-bottom">
+						<h6>联系我们</h6>
+						<ul>
+							<li><a href="#">Curabitur sapien</a></li>
+							<li><a href="#">Dignissim purus</a></li>
+							<li><a href="#">Tempus pretium</a></li>
+							<li><a href="#">Dignissim neque</a></li>
+							<li><a href="#">Ornared id aliquet</a></li>
+							<li><a href="#">Ultrices id du</a></li>
+							<li><a href="#">Commodo sit</a></li>
+
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+
+				</div>
+				<p class="footer-class">Copyright &copy; 2021.Company name All rights reserved</p>
+			</div>
+		</div>
+	</body>
+
+	<script src="../js/details.js"></script>
 </html>

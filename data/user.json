@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "235435355",
+      "password": "we123",
+      "repwd": "we123"
+    },
+    {
+      "id": 2,
+      "username": "13466204817",
+      "password": "we113",
+      "repwd": "we113"
+    },
+    {
+      "username": "13466202817",
+      "password": "wencai2956",
+      "repwd": "wencai2956",
+      "id": 3
+    },
+    {
+      "username": "13434343434",
+      "password": "wen123",
+      "repwd": "wen123",
+      "id": 4
+    },
+    {
+      "username": "17877878765",
+      "password": "wencai2956",
+      "repwd": "wencai2956",
+      "id": 5
+    }
+  ]
+}

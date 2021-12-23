@@ -25,7 +25,7 @@ class Cart{
             this.tbody.innerHTML = `
                 <tr height="100px">
                     <td colspan="6" style="border:none;">
-                        <h1>亲，你的购物车空空如也！赶紧去购物吧！<a href="../index.html">Go</a></h1>
+                        <h1>您的购物车是空的哦！赶紧去购物吧！<a href="../index.html">Go</a></h1>
                     </td>
                 </tr>
             `

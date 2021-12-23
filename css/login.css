@@ -1,0 +1,406 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+ ul li{
+	 list-style: none;
+ }
+ ul li a{
+	 text-decoration: none;
+ }
+ /* header */
+header{
+	width: 100%;
+	height: 45px;
+	background-color:#f2f2f2 ;
+	border-bottom: 1px solid #b2b2b2;
+	border-top: 1px solid #dbdcdd;
+	display: flex;
+	flex-direction: row;
+}
+#hleft{
+	width: 400px;
+	height:100% ;
+	background-color:#f2f2f2 ;
+	margin-left: 200px;
+	
+}
+#hleft{
+	margin-left: 300px;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items: center;
+}
+#hleft .phone{
+	width: 34px;
+	height: 34px;
+	background-image:url(../img/联系.jpg);
+}
+#hleft .pnumber span{
+	font-family: "arial narrow";
+	font-weight: 500;
+	font-size: 20px;
+	color: black;
+}
+#hleft .timer{
+	height:100% ;
+	width: 210px;
+	background-color: #f2f2f2 ;
+}
+#hleft .timer{
+	display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: space-around;
+}
+#top h1{
+	font-size: 14px;
+	color: #5a5a5a;
+}
+#p1{
+	font-size: 14px;
+	color: #5A5A5A;
+}
+.hright{
+	display: flex;
+	flex-direction: row;
+	 
+	align-items: center;
+	float: right;
+	width: 350px;
+	height: 100%;
+	background-color:#F2F2F2;
+	margin-left: 200px;
+}
+.hright .search{
+	width:220px ;
+	height:100% ;
+	background-color:#F2F2F2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+ .hright .search .search_photo{
+	 width: 16px;
+	 height: 19px;
+	 background-image: url(../img/search.jpg);
+	 background-repeat: no-repeat;
+	 background-position: 1px 4px;
+ }
+ 
+.hright .share{
+	width:34px ;
+	height: 34px;
+	background-color:#F2F2F2;
+ 
+	
+	
+}
+.hright .shoppingcart{
+	width: 34px;
+	height: 34px;
+	background-color:#F2F2F2;
+	margin-left: 10px;
+	 
+}
+/*// header */
+
+/* nav */
+nav{
+	width: 100%px;
+	height: 100px;
+	background-image: url(../img/bg_pattern.jpg);
+	background-repeat: repeat;
+	border-bottom: 2px solid #B2B2B2;
+	text-align: center;
+	font-weight: 700;
+	font-family: "微软雅黑";
+	font-size: 40px;
+	position: relative;
+	overflow: hidden;
+}
+nav h1{
+	margin-top: 9px;
+	color: #777777;
+}
+nav .logo{
+	width:207px;
+	height:75px ;
+	background-image:url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	float: left;
+	position: absolute;
+	top: 17px;
+	left:299px;
+}
+/* //nav */
+
+
+/* main */
+ main{
+	 width: 100%;
+	 height: 1000px;
+	 background-image:url(../img/创意十足的非主流个性黑色系图片桌面壁纸%20-%201.jpg);
+	 background-repeat: no-repeat;
+	 background-size: 123%;
+	 background-position: -333px  -49px;
+	 overflow: hidden;
+ }
+ main .login{
+	 width: 600px;
+	 height: 400px;
+	 background-color:#CCCCCC;
+	 opacity: .9;
+	 margin: 0 auto;
+	 overflow: hidden;
+	 margin-top: 100px;
+	 box-shadow: darkgrey 10px 10px 30px 5px
+	 
+ }
+ main .login form{
+ 	 width: 400px;
+ 	 height: 300px;
+ 	 background-color:#D9D9D9;
+	 margin: 0 auto;
+ 	 margin-top: 50px;
+	 position: relative;
+ }
+ main .login form .title{
+ width: 100%;
+ height: 50px;
+ text-align: center;
+ 
+ }
+  main .login form .title h3{
+	  marign-top:10px;
+	  font-size: 30px;
+	  font-family: "arial black";
+  }
+ 
+ #helpBlock1 {
+	 position: absolute;
+	 right: 7px;
+	 top: 65px;
+	 color: red;
+	 font-size: 12px;
+	  display: none;
+	 
+ }
+ #helpBlock2{
+	 position: absolute;
+	 right: 20px;
+	 top: 110px;
+	 color: red;
+	 font-size: 12px;
+	  display: none;
+ }
+  #helpBlock3{
+	  position: absolute;
+	  left: 140px;
+	  top: 217px;
+	  color: red;
+	  font-size: 12px;
+	  display: none;
+  }
+ 
+ 
+ main .login form .username{
+	 width: 400px;
+	 height: 30px;
+	  
+	 margin-top:10px;
+ }
+ main .login form .username input[type=text]{
+	 width: 200px;
+	 height: 25px;
+	margin-left: 44px;  
+	
+ }
+ main .login form .password{
+ 	 width: 400px;
+ 	 height: 30px;
+ 	 
+	 margin-top: 15px;
+	 
+ } 
+ main .login form .password input[type=password]{
+ 	 width: 200px;
+ 	 height: 25px;
+	 margin-left: 55px;
+ }
+ 
+ main .login form .submit{
+	 width: 250px;
+	 height: 30px;
+	  margin: 0 auto;
+	   margin-top: 20px;
+	   display: flex;
+	   flex-direction: row;
+	   justify-content: space-between;
+	   
+	 
+ }
+main .login form .submit input[type=submit]{
+	width: 100px;
+	height: 100%;
+	background-color: #FF0000;
+	cursor: pointer;
+	 
+} 
+main .login form .submit a {
+	display: block;
+	width: 100px;
+}
+main .login form .submit a input{
+	width: 100%;
+	height: 100%;
+	background-color: #FF0000;
+	cursor: pointer;
+	 
+} 
+main .login form .submit a input:hover{
+	color: #ffffff;
+}
+main .login form .submit input[type=submit]:hover{
+	color: #ffffff;
+}
+ 
+/* //main */
+
+
+/*--footer--*/
+.top-footer iframe {
+	width: 100%;
+	min-height: 30px;
+	border: none;
+	background-image: url(../img/bg_pattern.jpg);
+	background-repeat: repeat;
+
+}
+
+
+.footer .footer-bottom .container {
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+ 
+
+/* .footer-bottom .container .col-sm-3{
+	float: left;
+} */
+.top-footer1 h2 {
+	font-size: 20px;
+	color: #FA6F57;
+	font-family: 'OleoScript-Regular';
+	margin: 0 48px 5px;
+}
+
+.footer:nth-child(1) {
+	background-image: url(../img/bg_pattern.jpg);
+	background-repeat: repeat;
+}
+
+.top-footer1 input[type="text"] {
+	width: 9%;
+	padding: 12px;
+	outline: none;
+	color: #BDBDBD;
+	font-size: 10px;
+	background: none;
+	border: 1px solid #BDBDBD;
+	margin-left: 50px;
+}
+
+.top-footer1 input[type="submit"] {
+	font-size: 14px;
+	color: #fff;
+	background-color: #FA6F57;
+	border: none;
+	padding: 10.8px 0;
+	width: 10%;
+	vertical-align: top;
+	outline: none;
+}
+
+.top-footer1 input[type="submit"]:hover {
+	background-color: #52d0c4;
+}
+
+.footer {
+	border-top: 1px solid #BDBDBD;
+	background-image: url(../img/bg_pattern.jpg);
+	background-repeat: repeat;
+}
+
+.footer-top {
+	padding: 3em 0;
+}
+
+.top-footer1 {
+	margin: 6em 0 0;
+}
+
+.footer-bottom-cate h6 {
+	font-size: 1.1em;
+	color: #000;
+	margin: 0 0 0.5em;
+	font-family: 'OleoScript-Regular';
+}
+
+.footer-bottom-cate ul {
+	padding: 0;
+	margin: 0;
+}
+
+.footer-bottom-cate ul li {
+	list-style: none;
+	padding: 0.2em 0;
+}
+
+.footer-bottom-cate ul li a {
+	text-decoration: none;
+	font-size: 0.8em;
+	color: #777777;
+}
+
+.footer-bottom-cate ul li a:hover {
+	color: #52D0C4;
+	padding-left: 5px;
+}
+
+.cate-bottom ul li {
+	font-size: 1em;
+	color: #000;
+}
+
+.cate-bottom ul li.phone {
+	color: #FA6F57;
+	padding: 1em 0 0em;
+}
+
+p.footer-class {
+	font-size: 1em;
+	color: #B2B2B2;
+	margin: 2em 0 0;
+	text-align: center;
+}
+
+p.footer-class a {
+	text-decoration: none;
+	color: #52D0C4;
+}
+
+p.footer-class a:hover {
+	color: #B2B2B2;
+}
+
+.footer-bottom {
+	padding: 4em 0;
+	border-top: 1px solid #BDBDBD;
+}
+
+/*--//footer--*/
